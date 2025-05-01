@@ -1,0 +1,428 @@
+/* Badge Styles */
+.badge-container {
+  display: flex;
+  flex-direction: row;
+  gap: var(--spacing-sm); /* Space between badges */
+}
+
+.badge {
+  font-weight: var(--font-weight-medium);
+  line-height: var(--line-height-sm);
+  display: inline-block;
+  padding: var(--padding-md) var(--padding-lg);
+  transition:
+    background-color 0.3s,
+    box-shadow 0.3s;
+  text-align: center;
+  border-radius: var(--rounded-medium);
+}
+
+/* Heading Badge */
+.badge-with-heading {
+  position: relative;
+  display: inline-block;
+}
+
+.status-with-heading {
+  display: flex;
+  align-items: center;
+}
+
+.badge-heading-primary {
+  font-size: 0.5em;
+  font-weight: var(--font-weight-medium);
+  line-height: var(--line-height-sm);
+  position: absolute;
+  top: 33%;
+  margin-left: var(--margin-sm);
+  padding: var(--padding-sm) var(--padding-md);
+  transition:
+    background-color 0.3s,
+    box-shadow 0.3s;
+  transform: translateY(-50%);
+  text-align: center;
+  color: var(--text-white);
+  border-radius: var(--rounded-medium);
+  background-color: var(--brand-primary);
+}
+
+.badge-heading-secondary {
+  font-size: 0.5em;
+  font-weight: var(--font-weight-medium);
+  line-height: var(--line-height-sm);
+  position: absolute;
+  top: 33%;
+  margin-left: var(--margin-sm);
+  padding: var(--padding-sm) var(--padding-md);
+  transition:
+    background-color 0.3s,
+    box-shadow 0.3s;
+  transform: translateY(-50%);
+  text-align: center;
+  color: var(--text-white);
+  border-radius: var(--rounded-medium);
+  background-color: var(--brand-secondary);
+}
+
+.badge-heading-accent {
+  font-size: 0.5em;
+  font-weight: var(--font-weight-medium);
+  line-height: var(--line-height-sm);
+  position: absolute;
+  top: 33%;
+  margin-left: var(--margin-sm);
+  padding: var(--padding-sm) var(--padding-md);
+  transition:
+    background-color 0.3s,
+    box-shadow 0.3s;
+  transform: translateY(-50%);
+  text-align: center;
+  color: var(--text-white);
+  border-radius: var(--rounded-medium);
+  background-color: var(--brand-accent);
+}
+
+/* Notification Badge */
+.badge-notification-success {
+  font-size: var(--font-size-xs);
+  line-height: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.2em; /* Fixed width */
+  height: 1.2em; /* Fixed height */
+  margin-left: 0.5em;
+  padding: var(--padding-md);
+  color: var(--text-white);
+  border-radius: 50%;
+  outline: 0.125em solid var(--text-white); /* 2px in em */
+  background-color: var(--success-ui);
+}
+
+.badge-notification-warning {
+  font-size: var(--font-size-xs);
+  line-height: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.2em; /* Fixed width */
+  height: 1.2em; /* Fixed height */
+  margin-left: 0.5em;
+  padding: var(--padding-md);
+  color: var(--text-white);
+  border-radius: 50%;
+  outline: 0.125em solid var(--text-white); /* 2px in em */
+  background-color: var(--warning-ui);
+}
+
+.badge-notification-error {
+  font-size: var(--font-size-xs);
+  line-height: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.2em; /* Fixed width */
+  height: 1.2em; /* Fixed height */
+  margin-left: 0.5em;
+  padding: var(--padding-md);
+  color: var(--text-white);
+  border-radius: 50%;
+  outline: 0.125em solid var(--text-white); /* 2px in em */
+  background-color: var(--error-ui);
+}
+
+.badge-notification-info {
+  font-size: var(--font-size-xs);
+  line-height: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.2em; /* Fixed width */
+  height: 1.2em; /* Fixed height */
+  margin-left: 0.5em;
+  padding: var(--padding-md);
+  color: var(--text-white);
+  border-radius: 50%;
+  outline: 0.125em solid var(--text-white); /* 2px in em */
+  background-color: var(--info-ui);
+}
+
+/* Notification Corner Badge */
+
+.badge-notification-corner-success {
+  font-size: var(--font-size-sm);
+  line-height: normal;
+  position: absolute;
+  top: 0; /* Align the top of the badge to the top of the button */
+  right: 0; /* Align the right of the badge to the right of the button */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.2em; /* Fixed width */
+  height: 1.2em; /* Fixed height */
+  padding: var(--padding-md);
+  transform: translate(20%, -20%); /* Mathematically center the badge */
+  color: var(--text-white);
+  border-radius: 50%;
+  outline: 0.125em solid var(--text-white); /* 2px in em */
+  background-color: var(--success-ui);
+}
+
+.badge-notification-corner-warning {
+  font-size: var(--font-size-sm);
+  line-height: normal;
+  position: absolute;
+  top: 0; /* Align the top of the badge to the top of the button */
+  right: 0; /* Align the right of the badge to the right of the button */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.2em; /* Fixed width */
+  height: 1.2em; /* Fixed height */
+  padding: var(--padding-md);
+  transform: translate(20%, -20%); /* Mathematically center the badge */
+  color: var(--text-white);
+  border-radius: 50%;
+  outline: 0.125em solid var(--text-white); /* 2px in em */
+  background-color: var(--warning-ui);
+}
+
+.badge-notification-corner-error {
+  font-size: var(--font-size-sm);
+  line-height: normal;
+  position: absolute;
+  top: 0; /* Align the top of the badge to the top of the button */
+  right: 0; /* Align the right of the badge to the right of the button */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.5em; /* Fixed width */
+  height: 1.5em; /* Fixed height */
+  padding: var(--padding-md);
+  transform: translate(20%, -20%); /* Mathematically center the badge */
+  color: var(--text-white);
+  border-radius: 50%;
+  outline: 0.125em solid var(--text-white); /* 2px in em */
+  background-color: var(--error-ui);
+}
+
+.badge-notification-corner-info {
+  font-size: var(--font-size-sm);
+  line-height: normal;
+  position: absolute;
+  top: 0; /* Align the top of the badge to the top of the button */
+  right: 0; /* Align the right of the badge to the right of the button */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.2em; /* Fixed width */
+  height: 1.2em; /* Fixed height */
+  padding: var(--padding-md);
+  transform: translate(20%, -20%); /* Mathematically center the badge */
+  color: var(--text-white);
+  border-radius: 50%;
+  outline: 0.125em solid var(--text-white); /* 2px in em */
+  background-color: var(--info-ui);
+}
+
+/* Status Badge */
+
+.badge-status-error {
+  font-size: var(--font-size-md);
+  font-weight: var(--font-weight-medium); /* Medium weight */
+  position: relative;
+  display: inline-block;
+  padding: var(--padding-sm) var(--padding-lg); /* Padding for badges */
+  color: var(--text-white);
+  border-radius: var(--rounded-medium); /* Standard border radius */
+  background-color: var(--error-ui);
+}
+
+.badge-status-warning {
+  font-size: var(--font-size-xs); /* Base font size */
+  font-weight: var(--font-weight-medium); /* Medium weight */
+  line-height: 1.5;
+  position: relative;
+  top: 20%; /* Align the badge vertically center */
+  display: inline-block;
+  margin-left: var(--margin-sm); /* Space between text and badge */
+  padding: var(--padding-sm) var(--padding-md); /* Padding for badges */
+  transform: translateY(-20%); /* Vertically center the badge */
+  color: var(--text-white);
+  border-radius: var(--rounded-medium); /* Standard border radius */
+  background-color: var(--warning-ui);
+}
+
+.badge-status-success {
+  font-size: var(--font-size-xs); /* Base font size */
+  font-weight: var(--font-weight-medium); /* Medium weight */
+  line-height: 1.5;
+  position: relative;
+  top: 20%; /* Align the badge vertically center */
+  display: inline-block;
+  margin-left: var(--margin-sm); /* Space between text and badge */
+  padding: var(--padding-sm) var(--padding-md); /* Padding for badges */
+  transform: translateY(-20%); /* Vertically center the badge */
+  color: var(--text-white);
+  border-radius: var(--rounded-medium); /* Standard border radius */
+  background-color: var(--success-ui);
+}
+
+.badge-status-info {
+  font-size: var(--font-size-xs); /* Base font size */
+  font-weight: var(--font-weight-medium); /* Medium weight */
+  line-height: 1.5;
+  position: relative;
+  top: 20%; /* Align the badge vertically center */
+  display: inline-block;
+  margin-left: var(--margin-sm); /* Space between text and badge */
+  padding: var(--padding-sm) var(--padding-md); /* Padding for badges */
+  transform: translateY(-20%); /* Vertically center the badge */
+  color: var(--text-white);
+  border-radius: var(--rounded-medium); /* Standard border radius */
+  background-color: var(--info-ui);
+}
+
+/* Label Badge */
+.badge-label-accent {
+  color: var(--text-white);
+  background-color: var(--accent-tag);
+}
+
+.badge-label-primary {
+  color: var(--text-white);
+  background-color: var(--brand-primary);
+}
+
+.badge-label-secondary {
+  color: var(--text-white);
+  background-color: var(--brand-secondary);
+}
+
+.badge-label-success {
+  color: var(--text-white);
+  background-color: var(--success-ui);
+}
+
+.badge-label-warning {
+  color: var(--text-white);
+  background-color: var(--warning-ui);
+}
+
+.badge-label-error {
+  color: var(--text-white);
+  background-color: var(--error-ui);
+}
+
+.badge-label-info {
+  color: var(--text-white);
+  background-color: var(--info-ui);
+}
+
+/* Pill Badge */
+.badge-pill-success {
+  font-size: 1em;
+  padding: var(--padding-sm) var(--padding-md);
+  color: var(--text-white);
+  border-radius: var(--rounded-large);
+  background-color: var(--success-ui);
+}
+
+.badge-pill-warning {
+  font-size: 1em;
+  padding: var(--padding-sm) var(--padding-md);
+  color: var(--text-white);
+  border-radius: var(--rounded-large);
+  background-color: var(--warning-ui);
+}
+
+.badge-pill-error {
+  font-size: 1em;
+  padding: var(--padding-sm) var(--padding-md);
+  color: var(--text-white);
+  border-radius: var(--rounded-large);
+  background-color: var(--error-ui);
+}
+
+.badge-pill-info {
+  font-size: 1em;
+  padding: var(--padding-sm) var(--padding-md);
+  color: var(--text-white);
+  border-radius: var(--rounded-large);
+  background-color: var(--info-ui);
+}
+
+/* Badge Sizes */
+.badge-sm {
+  font-size: var(--font-size-xs);
+  line-height: var(--line-height-xs);
+}
+
+.badge-md {
+  font-size: var(--font-size-sm);
+  line-height: var(--line-height-sm);
+  padding: 0.25rem 0.5rem;
+}
+
+.badge-lg {
+  font-size: var(--font-size-md);
+  line-height: var(--line-height-md);
+  padding: 0.375rem 0.75rem;
+}
+
+.badge-xl {
+  font-size: var(--font-size-lg);
+  line-height: var(--line-height-lg);
+  padding: 0.5rem 1rem;
+}
+
+.badge-2xl {
+  font-size: var(--font-size-xl);
+  line-height: var(--line-height-xl);
+}
+
+.badge-3xl {
+  font-size: var(--font-size-2xl);
+  line-height: var(--line-height-2xl);
+}
+
+.badge-4xl {
+  font-size: var(--font-size-3xl);
+  line-height: var(--line-height-3xl);
+}
+
+/* Tag Sizes */
+.tag-sm {
+  font-size: var(--font-size-xs);
+  line-height: var(--line-height-xs);
+}
+
+.tag-md {
+  font-size: var(--font-size-sm);
+  line-height: var(--line-height-sm);
+}
+
+.tag-lg {
+  font-size: var(--font-size-md);
+  line-height: var(--line-height-md);
+}
+
+.tag-xl {
+  font-size: var(--font-size-lg);
+  line-height: var(--line-height-lg);
+}
+
+.tag-2xl {
+  font-size: var(--font-size-xl);
+  line-height: var(--line-height-xl);
+}
+
+.tag-3xl {
+  font-size: var(--font-size-2xl);
+  line-height: var(--line-height-2xl);
+}
+
+.tag-4xl {
+  font-size: var(--font-size-3xl);
+  line-height: var(--line-height-3xl);
+}

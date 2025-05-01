@@ -1,0 +1,168 @@
+/* Icon Sizes */
+.icon-sm {
+  font-size: var(--h5-font-size);
+  width: 1em;
+  height: 1em;
+  vertical-align: middle;
+}
+
+.icon-md {
+  font-size: var(--h4-font-size);
+  width: 1.33em;
+  height: 1.33em;
+  vertical-align: middle;
+}
+
+.icon-lg {
+  font-size: var(--h3-font-size);
+  width: 1.67em;
+  height: 1.67em;
+  vertical-align: middle;
+}
+
+/* ICON STYLES */
+
+/* Styles for circular icons with a primary background */
+.icon-circle-primary {
+  display: inline-flex;
+  padding: 0.25em;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: var(--text-link-default);
+  color: var(--text-white);
+  vertical-align: middle;
+  transition: background-color 0.3s;
+  cursor: pointer;
+}
+
+/* Hover effect for circular primary icons */
+.icon-circle-primary:hover {
+  background-color: var(--text-link-hover);
+}
+
+/* Active and focus styles for circular primary icons */
+.icon-circle-primary:active,
+.icon-circle-primary:focus {
+  background-color: var(--text-link-active);
+  outline: none;
+  box-shadow: 0 0 0 3px var(--text-link-active);
+}
+
+/* Styles for generic circular icons */
+.icon-circle {
+  display: inline-flex;
+  padding: 0.25em;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--border-default);
+  border-radius: 50%;
+  vertical-align: middle;
+}
+
+/* Styles for plain color circular icons */
+.icon-circle-plain {
+  display: inline-flex;
+  padding: 0.25em;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: var(--border-default);
+  vertical-align: middle;
+  transition: background-color 0.3s;
+}
+
+/* Hover effect for plain color circular icons */
+.icon-circle-plain:hover {
+  background-color: var(--border-table);
+}
+
+/* Active and focus styles for plain color circular icons */
+.icon-circle-plain:active,
+.icon-circle-plain:focus {
+  background-color: var(--border-input);
+  outline: none;
+  box-shadow: 0 0 0 3px var(--border-input);
+}
+
+/* Static circular icon style */
+.icon-circle-static {
+  display: inline-flex;
+  padding: 0.25em;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: var(--border-default); /* Set a default background color */
+  vertical-align: middle;
+}
+
+/* Icons disabled */
+.icon-disabled {
+  opacity: 0.5; /* Reduce opacity to indicate disabled state */
+  pointer-events: none; /* Prevent any mouse events from being triggered */
+}
+
+/* Icon Styles Where It Expands */
+
+.icon-circle-primary-expand {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border-radius: 50%;
+  background-color: var(--text-link-default);
+  color: var(--text-white);
+  overflow: hidden;
+  width: 2.5em;
+  height: 2.5em;
+  transition:
+    width 0.3s ease-in-out,
+    height 0.3s ease-in-out,
+    border-radius 0.3s ease-in-out,
+    padding 0.3s ease-in-out; /* Smooth transitions */
+  position: relative;
+  cursor: pointer;
+}
+
+.icon-circle-primary-expand:hover {
+  background-color: var(--text-link-hover);
+  width: 8em;
+  height: 2.5em;
+  /* height: 3.125em; Adjust height to maintain aspect ratio */
+  padding: var(--padding-sm) var(--padding-md);
+  border-radius: 2rem;
+  align-items: center;
+  display: flex;
+  box-shadow: var(--shadow-medium-offset) var(--shadow-medium); /* Medium shadow on hover */
+}
+
+/* Active and focus styles */
+.icon-circle-primary-expand:active,
+.icon-circle-primary-expand:focus {
+  background-color: var(--text-link-active);
+  outline: none;
+  box-shadow: 0 0 0 3px var(--text-link-active);
+}
+
+.icon-circle-primary-expand-text {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 0;
+  opacity: 0;
+  transition:
+    opacity 0.3s ease-in-out,
+    transform 0.3s ease-in-out; /* Smooth transitions */
+  white-space: nowrap; /* Prevent text from wrapping to the next line */
+  text-align: center;
+}
+
+.icon-circle-primary-expand:hover .icon-circle-primary-expand-text {
+  opacity: 1;
+  transform: translateX(-50%) scale(1); /* Slightly scale up the text */
+}
+
+.icon-circle-primary-expand:hover .icon-md {
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out; /* Smooth transition */
+}

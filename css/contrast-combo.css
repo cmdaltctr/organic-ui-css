@@ -1,0 +1,31 @@
+/* CONTRAST COMBINATIONS */
+/* Class for Contrast Text and Background */
+
+/* Ratio ~7:1 */
+.contrast-text-1 {
+  color: var(--contrast-text-1); /* Text Color 1 */
+}
+
+.contrast-bg-1 {
+  background-color: var(--contrast-bg-1); /* Background Color 1 */
+}
+
+/* Ratio ~8:1 */
+.contrast-text-2 {
+  color: var(--contrast-text-2); /* Text Color 2 */
+}
+
+.contrast-bg-2 {
+  background-color: var(--contrast-bg-2); /* Background Color 2 */
+}
+
+/* Ratio ~9:1 */
+.contrast-text-3 {
+  color: var(--contrast-text-3); /* Text Color 3 */
+}
+
+.contrast-bg-3 {
+  background-color: var(--contrast-bg-3); /* Background Color 3 */
+}
+
+/* Ratio ~10:1 */

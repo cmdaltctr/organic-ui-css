@@ -1,0 +1,8 @@
+/* Gradient Colors */
+.gradient-start {
+  background-color: var(--accent-gradient-start);
+}
+
+.gradient-end {
+  background-color: var(--accent-gradient-end);
+}

@@ -1,0 +1,10 @@
+{
+	"name": "organic-ui-framework",
+	"version": "1.0.0",
+	"description": "A custom CSS framework offering a hybrid approach (components + utilities). Built for 'organic' adaptability, it's designed for easy brand integration and streamlined UI creation, allowing you to efficiently mold components to fit your project's unique style.",
+	"main": "index.html",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"private": true
+}

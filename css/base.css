@@ -1,0 +1,202 @@
+/* Base Styles */
+html {
+	font-size: 16px; /* 1rem = 16px */
+}
+
+/* Main Typography Styles */
+
+/* Headings */
+h1 {
+	font-size: var(--h1-font-size);
+	line-height: var(--heading-line-height-lg);
+	letter-spacing: var(--letter-spacing);
+	font-weight: var(--font-weight-medium); /* Use the new variable */
+}
+
+h2 {
+	font-size: var(--h2-font-size);
+	line-height: var(--heading-line-height-lg);
+	letter-spacing: var(--letter-spacing);
+	font-weight: var(--font-weight-medium); /* Use the new variable */
+}
+
+h3 {
+	font-size: var(--h3-font-size);
+	line-height: var(--heading-line-height-md);
+	letter-spacing: var(--letter-spacing);
+	font-weight: var(--font-weight-medium); /* Use the new variable */
+}
+
+h4 {
+	font-size: var(--h4-font-size);
+	line-height: var(--heading-line-height-md);
+	letter-spacing: var(--letter-spacing);
+	font-weight: var(--font-weight-medium); /* Use the new variable */
+}
+
+h5 {
+	font-size: var(--h5-font-size);
+	line-height: var(--heading-line-height-sm);
+	letter-spacing: var(--letter-spacing);
+	font-weight: var(--font-weight-medium); /* Use the new variable */
+}
+
+h6 {
+	font-size: var(--h6-font-size);
+	line-height: var(--heading-line-height-sm);
+	letter-spacing: var(--letter-spacing);
+	font-weight: var(--font-weight-medium); /* Use the new variable */
+}
+
+/* Paragraphs */
+p {
+	font-size: var(--p-font-size);
+	line-height: var(--line-height-paragraph);
+	letter-spacing: var(--letter-spacing);
+	font-weight: var(--font-weight-normal); /* Still use the normal variable */
+}
+
+/* Link Styles */
+a {
+	color: var(--text-link-default);
+	text-decoration: none;
+	font-weight: var(--font-weight-normal);
+	font-size: var(--p-font-size);
+	line-height: var(--line-height-paragraph);
+}
+
+a:hover {
+	color: var(--text-link-hover);
+}
+
+a:focus {
+	color: var(--text-link-hover);
+	outline: 2px solid var(--text-link-hover);
+	outline-offset: 2px;
+}
+
+a:visited {
+	color: var(--text-link-visited);
+}
+
+/* Code Blocks */
+code {
+	font-family: 'Source Code Pro', monospace; /* Use Source Code Pro as the primary font */
+	font-size: var(--code-font-size); /* Ensure code font size matches paragraph font size */
+	line-height: var(--line-height-paragraph); /* Match line height */
+}
+
+/* LIST STYLES */
+ul {
+	padding-left: 1.5rem; /* Adjust the padding to create space for the bullet */
+	margin-left: 0; /* Remove the default margin */
+	/* max-width: 76ch; */
+}
+
+ol {
+	margin-top: 0.5rem; /* Adjusts spacing above the list if needed */
+	padding-left: 1.5rem; /* Standard padding for the first level */
+	/* max-width: 76ch; */
+}
+
+li {
+	font-size: var(--p-font-size);
+	line-height: var(--line-height-paragraph);
+	letter-spacing: var(--letter-spacing);
+	font-weight: var(--font-weight-normal);
+	margin-bottom: 0.5rem; /* Adds space between bullet points */
+	/* max-width: 76ch; */
+}
+
+/* Styling for the first level unordered list */
+ul {
+	margin-top: 0.5rem; /* Adjusts spacing above the list if needed */
+	padding-left: 1.5rem; /* Standard padding for the first level */
+}
+
+/* Adjusting nested (child) unordered lists */
+ul ul {
+	padding-left: 1.5rem; /* Extra padding for nested lists */
+}
+
+/* Optional - Add bottom margin to the last list item */
+li:last-child {
+	margin-bottom: 1rem;
+}
+
+/* Ordered List */
+/* Styling for the first level ordered list */
+ol {
+	margin-top: 0.5rem; /* Adjusts spacing above the list if needed */
+	padding-left: 1.5rem; /* Standard padding for the first level */
+}
+
+/* Adjusting nested (child) ordered lists */
+ol ol {
+	padding-left: 1.5rem; /* Extra padding for nested lists */
+}
+
+ol li:last-child {
+	margin-bottom: 1rem;
+}
+
+/* Table Styles */
+table {
+	width: 100%; /* Make the table take the full width */
+	border-collapse: collapse; /* Merge border spacing */
+	margin-bottom: var(--margin-md); /* Use margin variable for space below the table */
+	/* Removed border-radius and overflow properties */
+}
+
+caption {
+	font-size: var(--font-size-sm); /* Use small font size for the caption */
+	line-height: var(--line-height-paragraph); /* Set line height for the caption */
+	letter-spacing: var(--letter-spacing); /* Set letter spacing for the caption */
+	font-weight: var(--font-weight-medium); /* Use medium weight for the caption */
+	caption-side: top; /* Position the caption at the top */
+	text-align: left; /* Align text to the left or center as needed */
+	margin-bottom: var(--margin-md); /* Optional: Spacing below the caption */
+}
+
+th {
+	background-color: var(--bg-table-header); /* Use header background color */
+	padding: var(--padding-md); /* Use padding variable for header cells */
+	text-align: left; /* Align text to the left */
+	font-size: var(--p-font-size); /* Set font size for header */
+	line-height: var(--line-height-paragraph); /* Set line height for header */
+	letter-spacing: var(--letter-spacing); /* Set letter spacing for header */
+	font-weight: var(--font-weight-medium); /* Use medium weight for headers */
+	border-bottom: 2px solid var(--border-table); /* Border for header bottom */
+}
+
+td {
+	padding: var(--padding-md); /* Use padding variable for cell content */
+	border: 1px solid var(--border-table); /* Use variable for cell borders */
+	font-size: var(--p-font-size); /* Set font size for table body cells */
+	line-height: var(--line-height-paragraph); /* Set line height for body cells */
+	letter-spacing: var(--letter-spacing); /* Set letter spacing for body cells */
+	font-weight: var(--font-weight-normal); /* Use normal weight for body cells */
+}
+
+/* Alternating Row Colors */
+tr:nth-child(even) {
+	background-color: var(--bg-table-row-even); /* Even row background color */
+}
+
+tr:nth-child(odd) {
+	background-color: var(--bg-table-row-odd); /* Odd row background color */
+}
+
+/* Optional: Hover Effect for Rows */
+tr:hover {
+	background-color: rgba(0, 0, 0, 0.05); /* Light gray for hover effect */
+}
+
+/* BODY ELEMENTS */
+/* Section Styles */
+section {
+	padding-top: clamp(4rem, 5vw + 1rem, 6rem); /* Responsive vertical padding */
+	padding-bottom: clamp(4rem, 5vw + 1rem, 6rem); /* Responsive vertical padding */
+	padding-left: clamp(3rem, 4vw + 1rem, 6rem); /* Increased responsive horizontal padding */
+	padding-right: clamp(3rem, 4vw + 1rem, 6rem); /* Increased responsive horizontal padding */
+}

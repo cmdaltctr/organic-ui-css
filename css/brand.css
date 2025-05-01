@@ -1,0 +1,15 @@
+/* Brand Colors */
+.brand-primary {
+  background-color: var(--brand-primary);
+  color: var(--text-white); /* Example usage */
+}
+
+.brand-secondary {
+  background-color: var(--brand-secondary);
+  color: var(--text-white); /* Example usage */
+}
+
+.brand-accent {
+  background-color: var(--brand-accent);
+  color: var(--text-white); /* Example usage */
+}

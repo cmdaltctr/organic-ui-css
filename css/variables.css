@@ -1,0 +1,303 @@
+:root {
+	/* VIEWPORT SETTINGS */
+	--max-vw: 96rem; /* 1536px */
+	--min-vw: 40rem; /* 640px */
+
+	/* ACCENT COLORS */
+	--accent-badge: #0089a7;
+	--accent-gradient-start: #2c5f6b;
+	--accent-gradient-end: #0089a7;
+	--accent-tag: #4a8796;
+
+	/* BACKGROUND COLORS */
+	--bg-base: #ffffff;
+	--bg-alt: #f2f2f2;
+	--bg-card: #ffffff;
+	--bg-nav: #ffffff;
+	--bg-inverse: #1a1a1a;
+	--bg-structure-header: #ffffff;
+	--bg-structure-footer: #f2f2f2;
+	--bg-structure-sidebar: #e0e0e0;
+	--bg-table-header: #e0e0e0;
+	--bg-table-row-even: #ffffff;
+	--bg-table-row-odd: #f2f2f2;
+	--bg-transparent: rgba(255, 255, 255, 0.6);
+
+	/* BORDER COLORS */
+	--border-default: #bdbdbd;
+	--border-input: #757575;
+	--border-table: #a1a1a1;
+
+	/* BRAND COLORS */
+	--brand-accent: #0089a7;
+	--brand-primary: #2c5f6b;
+	--brand-secondary: #2c4a6b;
+
+	/* BUTTON COLORS */
+	--btn-primary-default: #2c5f6b;
+	--btn-primary-hover: #3a7d8c;
+	--btn-primary-focus: #1a3f47;
+	--btn-secondary-default: #2c4a6b;
+	--btn-secondary-hover: #385a82;
+	--btn-secondary-focus: #223652;
+	--btn-accent-default: #0089a7;
+	--btn-accent-hover: #00a3c9;
+	--btn-accent-focus: #005f73;
+
+	/* CODE COLORS */
+	--code-bg: #1e1e1e;
+	--code-text: #e0e6e8;
+
+	/* CONTRAST COLORS */
+	--contrast-text-1: #ffc745; /* Ratio ~7:1 */
+	--contrast-bg-1: #004353; /* Background Color 1 */
+	--contrast-text-2: #37bfdb; /* Ratio ~8:1 */
+	--contrast-bg-2: #1a1a1a; /* Background Color 2 */
+	--contrast-text-3: #a7e0f2; /* Ratio ~9:1 */
+	--contrast-bg-3: #182b41; /* Background Color 3 */
+
+	/* STATE COLORS */
+	--error-ui: #c62828;
+	--info-ui: #0277bd;
+	--success-ui: #2d7d32;
+	--warning-ui: #f57c00;
+
+	/* STATE BACKGROUND COLORS */
+	--error-bg: #ffebee;
+	--info-bg: #e1f5fe;
+	--success-bg: #e8f5e9;
+	--warning-bg: #fff3e0;
+
+	/* HIGHLIGHT COLORS */
+	--highlight-selection-bg: #4a8796;
+	--highlight-selection-text: #ffffff;
+
+	/* UTILITY COLORS */
+	--utility-print-bg: #ffffff; /* For print backgrounds */
+	--utility-print-text: #000000; /* For print text */
+	--utility-scrollbar-thumb: #757575; /* Scrollbar thumb color */
+	--utility-scrollbar-track: #e0e0e0; /* Scrollbar track color */
+
+	/* FORM INPUT VARIABLES */
+	--form-input-default: #ffffff; /* Default input background color */
+	--form-input-focus: #e0e0e0; /* Focused input background color */
+	--interactive-disabled: #e0e0e0;
+
+	/* NAVIGATION COLORS */
+	--nav-item-active: #0089a7;
+	--nav-item-default: #141d1f;
+	--nav-item-hover: #2c5f6b;
+
+	/* OVERLAY COLORS */
+	--overlay-modal: rgba(0, 0, 0, 0.7);
+	--overlay-tooltip: #1a1a1a;
+
+	/* ROUNDED CORNER SIZES */
+	--rounded-small: 0.75rem; /* Equivalent to 'rounded-xl' in Tailwind */
+	--rounded-medium: 1rem; /* Equivalent to 'rounded-2xl' in Tailwind */
+	--rounded-large: 1.5rem; /* Equivalent to 'rounded-3xl' in Tailwind */
+
+	/* SHADOW COLORS */
+	--shadow-focus: rgba(0, 137, 167, 0.5);
+	--shadow-focus-offset: 0 0 0 3px;
+	--shadow-heavy: rgba(26, 26, 26, 0.3);
+	--shadow-heavy-offset: 0 8px 16px 0;
+	--shadow-light: rgba(26, 26, 26, 0.1);
+	--shadow-light-offset: 0 2px 4px 0;
+	--shadow-medium: rgba(26, 26, 26, 0.2);
+	--shadow-medium-offset: 0 4px 8px 0;
+
+	/* TEXT COLORS */
+	--text-disabled: #767676;
+	--text-link-active: #00b3d9;
+	--text-link-default: #0089a7;
+	--text-link-hover: #005f73;
+	--text-link-visited: #2c5f6b;
+	--text-subtle: #595959;
+	--text-primary: #2c5f6b;
+	--text-secondary: #2c4a6b;
+	--text-accent: #0089a7;
+	--text-white: #ffffff;
+	--text-black: #1a1a1a;
+	--text-muted: #7d7d7d;
+
+	/* TYPOGRAPHY VARIABLES */
+	--font-weight-normal: 400;
+	--font-weight-medium: 500;
+	--font-weight-heavy: 800;
+	--letter-spacing: 0.005em;
+
+	/* CODE TYPOGRAPHY */
+	--code-font-size: clamp(1rem, 1vw + 0.3rem, 1.375rem); /* Similar to paragraph font size */
+
+	/* PARAGRAPH VARIABLES */
+	/* --p-font-size: clamp(1rem, 1vw + 0.5rem, 1.375rem); Base 16px (1rem) -- bigger */
+	--p-font-size: clamp(1rem, 1vw + 0.4rem, 1.25rem); /* Base 16px (1rem) -- smaller */
+	--line-height-paragraph: 1.5; /* Line height for paragraphs */
+
+	/* HEADING LINE HEIGHT */
+	--heading-line-height-sm: 1.25;
+	--heading-line-height-md: 1.333;
+	--heading-line-height-lg: 1.5;
+	--heading-line-height-xl: 1.666;
+
+
+	/* HEADING FONT SIZES */
+	--h1-font-size: clamp(3rem, 3rem + ((1vw - 0.4rem) * 2), 5rem);
+	--h2-font-size: clamp(2.5rem, 2.5rem + ((1vw - 0.4rem) * 1.5), 4rem);
+	--h3-font-size: clamp(2rem, 2rem + ((1vw - 0.4rem) * 1.25), 3rem);
+	--h4-font-size: clamp(1.75rem, 1.75rem + ((1vw - 0.4rem) * 1.1), 2.5rem);
+	--h5-font-size: clamp(1.5rem, 1.5rem + ((1vw - 0.4rem) * 0.95), 2rem);
+	--h6-font-size: clamp(1.25rem, 1.25rem + ((1vw - 0.4rem) * 0.8), 1.75rem);
+
+	/* FONT SIZES VARIABLE - REM & CLAMP VERSION */
+	--font-size-xs: clamp(0.75rem, calc(0.1vw + 0.5rem), 0.875rem); /* Approx. 12px -> 0.75rem */
+	--font-size-sm: clamp(0.875rem, calc(0.15vw + 0.625rem), 1.063rem); /* Approx. 14px -> 0.875rem */
+	--font-size-md: clamp(1rem, calc(1vw + 0.5rem), 1.375rem); /* Reference point */
+	--font-size-lg: clamp(1.25rem, calc(1.125vw + 0.75rem), 1.5rem); /* Approx. 20px -> 1.25rem */
+	--font-size-xl: clamp(1.5rem, calc(1.375vw + 0.875rem), 1.75rem); /* Approx. 24px -> 1.5rem */
+	--font-size-2xl: clamp(1.875rem, calc(1.625vw + 1rem), 2.125rem); /* Approx. 30px -> 1.875rem */
+	--font-size-3xl: clamp(2.25rem, calc(1.875vw + 1.125rem), 2.5rem); /* Approx. 36px -> 2.25rem */
+	--font-size-4xl: clamp(
+		2.625rem,
+		calc(2.125vw + 1.25rem),
+		2.875rem
+	); /* Approx. 42px -> 2.625rem */
+
+	/* LINE HEIGHTS VARIABLE */
+	--line-height-xs: 1rem;
+	--line-height-sm: 1.125rem;
+	--line-height-md: 1.5rem;
+	--line-height-lg: 1.666rem;
+	--line-height-xl: 2.125rem;
+	--line-height-2xl: 2.5rem;
+	--line-height-3xl: 4rem;
+	--line-height-4xl: 5rem;
+
+	/* DISPLAY VARIABLES */
+	/* Display Font Sizes */
+	--display-font-size-sm: 1.5rem;
+	--display-font-size-md: 2rem;
+	--display-font-size-lg: 2.5rem;
+	--display-font-size-xl: 3rem;
+	--display-font-size-2xl: 3.5rem;
+	--display-font-size-3xl: 4rem;
+	--display-font-size-4xl: 4.5rem;
+
+	/* Display Line Heights */
+	--display-line-height-sm: 1.8rem;
+	--display-line-height-md: 2.4rem;
+	--display-line-height-lg: 3rem;
+	--display-line-height-xl: 3.6rem;
+	--display-line-height-2xl: 4.2rem;
+	--display-line-height-3xl: 4.8rem;
+	--display-line-height-4xl: 5.4rem;
+
+	/* PADDING VARIABLES */
+	--padding-sm: 0.125rem; /* 2px */
+	--padding-md: 0.5rem; /* 8px */
+	--padding-lg: 1rem; /* 16px */
+	--padding-xl: 1.5rem; /* 24px */
+	--padding-2xl: 2rem; /* 32px */
+	--padding-3xl: 2.5rem; /* 40px */
+	--padding-4xl: 3rem; /* 48px */
+
+	/* MARGINS VARIABLES */
+	--margin-sm: 0.25rem; /* 4px */
+	--margin-md: 1rem; /* 16px */
+	--margin-lg: 1.75rem; /* 28px */
+	--margin-xl: 2.5rem; /* 40px */
+	--margin-2xl: 3.25rem; /* 52px */
+	--margin-3xl: 4rem; /* 64px */
+	--margin-4xl: 4.75rem; /* 76px */
+
+	/* SPACING VARIABLES */
+	--spacing-sm: clamp(0.79rem, calc(0.2vw + 0.79rem), 4.736rem);
+	--spacing-md: clamp(1.052rem, calc(0.25vw + 1.052rem), 6.312rem);
+	--spacing-lg: clamp(1.402rem, calc(0.3vw + 1.402rem), 8.36rem);
+	--spacing-xl: clamp(1.868rem, calc(0.35vw + 1.868rem), 11.96rem);
+	--spacing-2xl: clamp(2.491rem, calc(0.4vw + 2.491rem), 14.87rem);
+	--spacing-3xl: clamp(3.323rem, calc(0.5vw + 3.323rem), 19.87rem);
+	--spacing-4xl: clamp(4.424rem, calc(0.6vw + 4.424rem), 26.55rem);
+
+	/* CARD DIMENSIONS FOR DIFFERENT BREAKPOINTS */
+	/* Card Variant 1 */
+	/* min-width 300px */
+	--card-width-sm: 11.25rem; /* 180px */
+	--card-height-sm: 17.5rem; /* 280px */
+
+	/* min-width 600px */
+	--card-width-md: 15rem; /* 240px */
+	--card-height-md: 22.5rem; /* 360px */
+
+	/* min-width 900px */
+	--card-width-lg: 18.75rem; /* 300px */
+	--card-height-lg: 30rem; /* 480px */
+
+	/* min-width 1200px */
+	--card-width-xl: 22.5rem; /* 360px */
+	--card-height-xl: 36.25rem; /* 580px */
+
+	/* min-width 1536px */
+	--card-width-2xl: 26.25rem; /* 420px */
+	--card-height-2xl: 42.5rem; /* 680px */
+
+	/*Card Variant 2*/
+	/* min-width 300px */
+	--card-info-width-sm: 8rem; /* 128px */
+	--card-info-height-sm: 8rem; /* 128px */
+
+	/* min-width 600px */
+	--card-info-width-md: 12rem; /* 192px */
+	--card-info-height-md: 12rem; /* 192px */
+
+	/* min-width 900px */
+	--card-info-width-lg: 16rem; /* 256px */
+	--card-info-height-lg: 16rem; /* 256px */
+
+	/* min-width 1200px */
+	--card-info-width-xl: 20rem; /* 320px */
+	--card-info-height-xl: 20rem; /* 320px */
+
+	/* Card Variant 3 */
+	/* min-width 300px */
+	--card-icon-width-sm: 18rem; /* 288px */
+	--card-icon-height-sm: 20rem; /* 320px */
+
+	/* min-width 600px */
+	--card-icon-width-md: 20rem; /* 320px */
+	--card-icon-height-md: 22rem; /* 352px */
+
+	/* min-width 900px */
+	--card-icon-width-lg: 22rem; /* 352px */
+	--card-icon-height-lg: 24rem; /* 384px */
+
+	/* min-width 1200px */
+	--card-icon-width-xl: 24rem; /* 384px */
+	--card-icon-height-xl: 26rem; /* 416px */
+
+	/* min-width 1536px */
+	--card-icon-width-2xl: 26rem; /* 416px */
+	--card-icon-height-2xl: 28rem; /* 448px */
+
+	/* Card Variant 4 */
+	/* min-width 300px */
+	--card-blog-width-sm: 20rem;
+	--card-blog-height-sm: 24rem;
+
+	/* min-width 600px */
+	--card-blog-width-md: 20rem;
+	--card-blog-height-md: 22rem;
+
+	/* min-width 900px */
+	--card-blog-width-lg: 22rem;
+	--card-blog-height-lg: 24rem;
+
+	/* min-width 1200px */
+	--card-blog-width-xl: 24rem;
+	--card-blog-height-xl: 26rem;
+
+	/* min-width 1536px */
+	--card-blog-width-2xl: 26rem;
+	--card-blog-height-2xl: 28rem;
+}

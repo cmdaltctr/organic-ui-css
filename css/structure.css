@@ -1,0 +1,12 @@
+/* Structure Colors */
+.bg-structure-header {
+  background-color: var(--bg-structure-header);
+}
+
+.bg-structure-footer {
+  background-color: var(--bg-structure-footer);
+}
+
+.bg-structure-sidebar {
+  background-color: var(--bg-structure-sidebar);
+}

@@ -1,0 +1,28 @@
+/* Background Colors */
+.bg-alt {
+  background-color: var(--bg-alt);
+}
+
+.bg-base {
+  background-color: var(--bg-base);
+}
+
+.bg-card {
+  background-color: var(--bg-card);
+}
+
+.bg-inverse {
+  background-color: var(--bg-inverse);
+}
+
+.bg-table-header {
+  background-color: var(--bg-table-header);
+}
+
+.bg-table-row-even {
+  background-color: var(--bg-table-row-even);
+}
+
+.bg-table-row-odd {
+  background-color: var(--bg-table-row-odd);
+}

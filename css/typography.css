@@ -1,0 +1,99 @@
+/* Text Sizes Classes */
+
+.text-xs {
+  font-size: var(--font-size-xs);
+  line-height: var(--line-height-xs);
+}
+
+.text-sm {
+  font-size: var(--font-size-sm);
+  line-height: var(--line-height-sm);
+}
+
+.text-md {
+  font-size: var(--font-size-md);
+  line-height: var(--line-height-md);
+}
+
+.text-lg {
+  font-size: var(--font-size-lg);
+  line-height: var(--line-height-lg);
+}
+
+.text-xl {
+  font-size: var(--font-size-xl);
+  line-height: var(--line-height-xl);
+}
+
+.text-2xl {
+  font-size: var(--font-size-2xl);
+  line-height: var(--line-height-2xl);
+}
+
+.text-3xl {
+  font-size: var(--font-size-3xl);
+  line-height: var(--line-height-3xl);
+}
+
+.text-4xl {
+  font-size: var(--font-size-4xl);
+  line-height: var(--line-height-4xl);
+}
+
+/* Display Classes */
+
+.display-sm {
+  font-size: var(--display-font-size-sm);
+  line-height: var(--display-line-height-sm);
+}
+
+.display-md {
+  font-size: var(--display-font-size-md);
+  line-height: var(--display-line-height-md);
+}
+
+.display-lg {
+  font-size: var(--display-font-size-lg);
+  line-height: var(--display-line-height-lg);
+}
+
+.display-xl {
+  font-size: var(--display-font-size-xl);
+  line-height: var(--display-line-height-xl);
+}
+
+.display-2xl {
+  font-size: var(--display-font-size-2xl);
+  line-height: var(--display-line-height-2xl);
+}
+
+.display-3xl {
+  font-size: var(--display-font-size-3xl);
+  line-height: var(--display-line-height-3xl);
+}
+
+.display-4xl {
+  font-size: var(--display-font-size-4xl);
+  line-height: var(--display-line-height-4xl);
+}
+
+/*
+ * CSS Classes for Max Width in ch Units
+ * Based on the Perfect Fourth Series for Optimal Readability
+ * Classes: .ch-20 (20ch), .ch-40 (40ch), .ch-60 (60ch), .ch-76 (76ch)
+ */
+.ch-20 {
+  max-width: 20ch;
+}
+
+.ch-40 {
+  max-width: 40ch;
+}
+
+.ch-60 {
+  max-width: 60ch;
+}
+
+.ch-76 {
+  max-width: 76ch;
+}

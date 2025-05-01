@@ -1,0 +1,188 @@
+/* Button Styles */
+.button {
+  font-size: var(--p-font-size);
+  line-height: var(--line-height-paragraph);
+  letter-spacing: var(--letter-spacing);
+  font-weight: var(--font-weight-normal);
+  border: none;
+  padding: var(--padding-md) var(--padding-lg);
+  cursor: pointer;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease,
+    box-shadow 0.3s ease;
+  position: relative;
+  display: inline-flex;
+  align-items: center; /* Vertically center the button content */
+  justify-content: center; /* Horizontally center the button content */
+}
+
+.button:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px var(--text-link-active); /* Add focus ring */
+}
+
+/* Button Primary */
+.button-primary {
+  background-color: var(--btn-primary-default);
+  color: var(--text-white);
+}
+
+.button-primary:hover {
+  background-color: var(--btn-primary-hover);
+  box-shadow: var(--shadow-medium-offset) var(--shadow-medium); /* Medium shadow on hover */
+}
+
+.button-primary:active,
+.button-primary:focus {
+  background-color: var(--btn-primary-hover); /* Change color on active */
+  box-shadow: 0 0 0 3px var(--btn-primary-focus); /* Add focus ring */
+}
+
+/* Button Secondary */
+.button-secondary {
+  background-color: var(--btn-secondary-default);
+  color: var(--text-white);
+}
+
+.button-secondary:hover {
+  background-color: var(--btn-secondary-hover);
+  box-shadow: var(--shadow-medium-offset) var(--shadow-medium); /* Medium shadow on hover */
+  color: var(--text-white);
+}
+
+.button-secondary:active,
+.button-secondary:focus {
+  background-color: var(--btn-secondary-hover); /* Change color on active */
+  box-shadow: 0 0 0 3px var(--btn-secondary-focus); /* Add focus ring */
+}
+
+/* Button Accent */
+.button-accent {
+  background-color: var(--btn-accent-default);
+  color: var(--text-white);
+}
+
+.button-accent:hover {
+  background-color: var(--btn-accent-hover);
+  box-shadow: var(--shadow-medium-offset) var(--shadow-medium); /* Medium shadow on hover */
+  color: var(--text-white);
+}
+
+.button-accent:active,
+.button-accent:focus {
+  background-color: var(--btn-accent-hover); /* Change color on active */
+  box-shadow: 0 0 0 3px var(--btn-accent-focus); /* Add focus ring */
+}
+
+/* Form Input Styles */
+.form-input-default {
+  background-color: var(--form-input-default);
+}
+
+.form-input-focus {
+  background-color: var(--form-input-focus);
+}
+
+.interactive-disabled {
+  background-color: var(--interactive-disabled);
+}
+
+/* Button with Different Sizes */
+.button-sm {
+  font-size: var(--font-size-sm,);
+  line-height: var(--line-height-paragraph);
+  letter-spacing: var(--letter-spacing);
+  font-weight: var(--font-weight-normal);
+  border: none;
+  padding: var(--padding-sm) var(--padding-md);
+  cursor: pointer;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease,
+    box-shadow 0.3s ease;
+  box-shadow: var(--shadow-light-offset) var(--shadow-light); /* Light shadow on hover */
+}
+
+.button-md {
+  font-size: var(--font-size-md);
+  line-height: var(--line-height-paragraph);
+  letter-spacing: var(--letter-spacing);
+  font-weight: var(--font-weight-normal);
+  border: none;
+  padding: var(--padding-md) var(--padding-lg);
+  cursor: pointer;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease,
+    box-shadow 0.3s ease;
+  box-shadow: var(--shadow-medium-offset) var(--shadow-medium); /* Medium shadow on hover */
+}
+
+.button-lg {
+  font-size: var(--font-size-lg);
+  line-height: var(--line-height-paragraph);
+  letter-spacing: var(--letter-spacing);
+  font-weight: var(--font-weight-normal);
+  border: none;
+  padding: var(--padding-lg) var(--padding-xl);
+  cursor: pointer;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease,
+    box-shadow 0.3s ease;
+  box-shadow: var(--shadow-heavy-offset) var(--shadow-heavy); /* Large shadow on hover */
+}
+
+.button-icon-primary {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  position: relative; /* Ensure proper positioning of pseudo-element and text */
+  overflow: hidden; /* Prevent overflow */
+  color: var(--text-black); /* Default text color */
+  padding-left: var(
+    --padding-md
+  ); /* Added padding to create space for background */
+  transition: color 0.5s ease; /* Smooth transition for text color */
+}
+
+/* The pseudo-element (background) */
+.button-icon-primary::before {
+  content: ""; /* Generate the hover effect background */
+  position: absolute; /* Position it to cover the button */
+  top: 0; /* Align to the top */
+  right: 0; /* Start from the right */
+  height: 100%; /* Cover entire button height */
+  width: 100%; /* Cover entire button width */
+  background-color: var(--brand-primary); /* Hover background color */
+  z-index: -1; /* Ensure it's beneath the text */
+  transform: translateX(100%); /* Initially, it's off-screen to the right */
+  transition: transform 0.5s ease; /* Smooth transition when hovering */
+}
+
+/* On hover, the background expands */
+.button-icon-primary:hover::before {
+  transform: translateX(0); /* Move background into view on hover */
+}
+
+/* SVG hover interaction: Move and shrink the SVG */
+.button-icon-primary:hover > svg {
+  transform: translateX(-5px) scale(0.85); /* Slight movement & resize */
+}
+
+/* Text color change on hover */
+.button-icon-primary:hover {
+  color: var(--text-white); /* Text and icon color changes on hover */
+}
+
+/* Ensure the SVG remains above the background */
+.button-icon-primary > svg {
+  position: relative; /* Use relative positioning */
+  z-index: 1; /* SVG should always be above the background */
+  transition: transform 0.5s ease; /* Animation effect for the icon */
+  background-color: var(--brand-primary); /* Original background for SVG */
+  color: var(--text-white); /* Text color for the icon */
+  border-radius: 50%; /* Circular icon appearance */
+  padding: 0.1rem; /* Padding for SVG icon */
+}

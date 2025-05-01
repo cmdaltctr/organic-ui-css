@@ -1,0 +1,32 @@
+.link-decoration-underline {
+  color: var(--text-link-default);
+  text-decoration: none;
+  font-weight: var(--font-weight-normal);
+  font-size: var(--p-font-size);
+  line-height: var(--line-height-paragraph);
+  position: relative;
+  display: inline-block;
+}
+
+.link-decoration-underline::after {
+  content: "";
+  display: block;
+  height: 2px;
+  background: var(--text-link-hover);
+  position: absolute;
+  left: 50%;
+  bottom: -2px;
+  width: 0;
+  transition:
+    width 0.3s ease,
+    left 0.3s ease;
+}
+
+.link-decoration-underline:hover {
+  color: var(--text-link-hover);
+}
+
+.link-decoration-underline:hover::after {
+  width: 100%;
+  left: 0;
+}

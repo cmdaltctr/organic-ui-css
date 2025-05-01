@@ -1,0 +1,17 @@
+/* Nav Colors */
+
+.bg-nav {
+  background-color: var(--bg-nav);
+}
+
+.nav-item-active {
+  color: var(--nav-item-active);
+}
+
+.nav-item-default {
+  color: var(--nav-item-default);
+}
+
+.nav-item-hover {
+  color: var(--nav-item-hover);
+}

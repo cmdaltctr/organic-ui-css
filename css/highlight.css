@@ -1,0 +1,5 @@
+/* Highlighted Text */
+::selection {
+  background-color: var(--highlight-selection-bg); /* Selection Background */
+  color: var(--highlight-selection-text); /* Selection Text */
+}

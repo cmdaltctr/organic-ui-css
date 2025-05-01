@@ -1,0 +1,51 @@
+/* Text Colors */
+.text-primary {
+  color: var(--text-primary);
+}
+
+.text-secondary {
+  color: var(--text-secondary);
+}
+
+.text-accent {
+  color: var(--text-accent);
+}
+
+.text-muted {
+  color: var(--text-muted);
+}
+
+.text-link-default {
+  color: var(--text-link-default);
+}
+
+.text-link-hover {
+  color: var(--text-link-hover);
+}
+
+.text-link-active {
+  color: var(--text-link-active);
+}
+
+.text-link-visited {
+  color: var(--text-link-visited);
+}
+
+.text-disabled {
+  color: var(--text-disabled);
+}
+
+/* White Text */
+.text-white {
+  color: var(--text-white);
+}
+
+/* Grey Text */
+.text-subtle {
+  color: var(--text-subtle);
+}
+
+/* Black Text */
+.text-black {
+  color: var(--text-black);
+}

@@ -1,0 +1,8 @@
+/* Overlay Colors */
+.overlay-modal {
+  background-color: var(--overlay-modal);
+}
+
+.overlay-tooltip {
+  background-color: var(--overlay-tooltip);
+}

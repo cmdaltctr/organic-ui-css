@@ -1,0 +1,7 @@
+/* Code Block Styles */
+code {
+  background-color: var(--code-bg);
+  color: var(--code-text);
+  padding: 0.1em 0.2em;
+  border-radius: 0.2em;
+}

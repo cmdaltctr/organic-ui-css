@@ -1,0 +1,20 @@
+/* Effects Classes */
+.shadow-light {
+  box-shadow: var(--shadow-light-offset) var(--shadow-light);
+}
+
+.shadow-medium {
+  box-shadow: var(--shadow-medium-offset) var(--shadow-medium);
+}
+
+.shadow-heavy {
+  box-shadow: var(--shadow-heavy-offset) var(--shadow-heavy);
+}
+
+.shadow-focus {
+  box-shadow: var(--shadow-focus-offset) var(--shadow-focus);
+}
+
+.shadow-none {
+  box-shadow: none;
+}

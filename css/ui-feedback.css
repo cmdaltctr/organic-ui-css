@@ -1,0 +1,33 @@
+/* UI Colors */
+.error-ui {
+  color: var(--error-ui);
+}
+
+.info-ui {
+  color: var(--info-ui);
+}
+
+.success-ui {
+  color: var(--success-ui);
+}
+
+.warning-ui {
+  color: var(--warning-ui);
+}
+
+/* State Background Colors */
+.success-bg {
+  background-color: var(--success-bg);
+}
+
+.error-bg {
+  background-color: var(--error-bg);
+}
+
+.warning-bg {
+  background-color: var(--warning-bg);
+}
+
+.info-bg {
+  background-color: var(--info-bg);
+}
