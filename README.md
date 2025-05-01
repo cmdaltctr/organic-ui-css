@@ -49,6 +49,44 @@ Organic UI aims for flexibility by providing both pre-defined components (like c
 
 Refer to the individual CSS files within the `CSS/` directory for available classes and component structures (documentation forthcoming).
 
+## File Structure
+
+css/
+├── base/
+│ ├── base.css # Basic HTML element styles
+│ ├── reset.css # (Optional) CSS reset
+│ └── typography.css # Default font settings, headings etc. (if not utilities)
+│ └── code.css # Default code styling (if not component)
+│ └── links.css # Default link styling (if not component)
+│ └── highlight.css # Default highlight styling (if not utility)
+├── components/
+│ ├── badge.css
+│ ├── card.css
+│ ├── button.css # (Example)
+│ ├── alert.css # (Example - from ui-feedback)
+│ ├── icon.css # (If defining icon components)
+│ └── ...
+├── utilities/
+│ ├── spacing.css # Margins, padding
+│ ├── colors.css # Text, background colors (from text.css, background.css)
+│ ├── borders.css
+│ ├── effects.css # Shadows, etc.
+│ ├── typography.css # Text alignment, size utilities (if not base)
+│ ├── layout.css # Display, position, width (part of utility.css?)
+│ ├── gradients.css
+│ └── ...
+├── structure/ # Or layout/
+│ ├── header.css
+│ ├── footer.css
+│ ├── nav.css
+│ ├── sidebar.css
+│ └── grid.css # (If you have a layout grid system)
+├── themes/ # (Optional - for different themes)
+│ └── dark-theme.css
+└── variables.css # Root variables (or variables/ folder)
+
+_Note: This structure provides clearer separation based on the purpose of the CSS rules._
+
 ## Changelog(s)
 
 This project follows Semantic Versioning (SemVer).
@@ -63,6 +101,7 @@ Versions are numbered MAJOR.MINOR.PATCH:
 
 #### Version History
 
+- **v0.2.0 (Alpha)** - Revised the CSS file structure for better organisation.
 - **v0.1.0 (Alpha)** - Initial release. Basic structure, core styles, and initial set of components/utilities.
 
 ## Licence
