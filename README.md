@@ -51,6 +51,7 @@ Refer to the individual CSS files within the `CSS/` directory for available clas
 
 ## File Structure
 
+``` plain-text
 css/
 ├── base/
 │ ├── base.css # Basic HTML element styles
@@ -84,6 +85,7 @@ css/
 ├── themes/ # (Optional - for different themes)
 │ └── dark-theme.css
 └── variables.css # Root variables (or variables/ folder)
+```
 
 _Note: This structure provides clearer separation based on the purpose of the CSS rules._
 
