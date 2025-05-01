@@ -49,14 +49,14 @@ Organic UI aims for flexibility by providing both pre-defined components (like c
 
 Refer to the individual CSS files within the `CSS/` directory for available classes and component structures (documentation forthcoming).
 
-## File Structure
+## Planned File Structure
 
 ``` plain-text
 css/
 ├── base/
 │ ├── base.css # Basic HTML element styles
 │ ├── reset.css # (Optional) CSS reset
-│ └── typography.css # Default font settings, headings etc. (if not utilities)
+│ └──  # Default font settings, headings etc. (if not utilities)
 │ └── code.css # Default code styling (if not component)
 │ └── links.css # Default link styling (if not component)
 │ └── highlight.css # Default highlight styling (if not utility)
@@ -68,13 +68,13 @@ css/
 │ ├── icon.css # (If defining icon components)
 │ └── ...
 ├── utilities/
-│ ├── spacing.css # Margins, padding
-│ ├── colors.css # Text, background colors (from text.css, background.css)
+│ ├── colors.css # Background colors etc
 │ ├── borders.css
 │ ├── effects.css # Shadows, etc.
-│ ├── typography.css # Text alignment, size utilities (if not base)
-│ ├── layout.css # Display, position, width (part of utility.css?)
+│ ├── typography.css # Text alignment, size utilities
+│ ├── layout.css # Display, position, width (part of ?)
 │ ├── gradients.css
+| ├── utility.css # Margins, paddings etc
 │ └── ...
 ├── structure/ # Or layout/
 │ ├── header.css
@@ -87,7 +87,7 @@ css/
 └── variables.css # Root variables (or variables/ folder)
 ```
 
-_Note: This structure provides clearer separation based on the purpose of the CSS rules._
+_Note: This planned structure could provide clearer separation based on the purpose of the CSS rules._
 
 ## Changelog(s)
 

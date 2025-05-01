@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="eec32fcd-f972-4bcd-b212-0227c0f7eb83" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/Nexus-Framework.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/prettier.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Styles/background.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Styles/badge.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Styles/base.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Styles/border.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Styles/brand.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Styles/card.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Styles/code.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Styles/contrast-combo.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Styles/effects.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Styles/gradient.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Styles/highlight.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Styles/icon.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Styles/interactive.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Styles/links.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Styles/nav.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Styles/overlay.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Styles/structure.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Styles/text.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Styles/typography.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Styles/ui-feedback.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Styles/utility.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Styles/variables.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Styles/base.css" root0="SKIP_INSPECTION" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
+  <component name="ProjectId" id="2m9SwRZQKzVdO4s4AkwTLVVKY3c" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.AccountsToCodyMigration&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ChatTagsLlmMigration&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.CodyAccountHistoryMigration&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.CodyAccountsIdsRefresh&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.CodyAssignOrphanedChatsToActiveAccount&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.CodyConvertUrlToCodebaseName&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.CodyHistoryLlmMigration&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.CodyMigrateChatHistory-v2&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.CodyProjectSettingsMigration&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.DeprecatedChatLlmMigration&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ToggleCodyToolWindowAfterMigration&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;/opt/homebrew/lib/node_modules/prettier&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Styles" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-1632447f56bf-JavaScript-WS-243.26053.12" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="eec32fcd-f972-4bcd-b212-0227c0f7eb83" name="Changes" comment="" />
+      <created>1696790511844</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1696790511844</updated>
+      <workItem from="1726487538162" duration="564000" />
+      <workItem from="1726494530069" duration="1448000" />
+      <workItem from="1726495990206" duration="33065000" />
+      <workItem from="1726637324314" duration="2250000" />
+      <workItem from="1726643983593" duration="42087000" />
+      <workItem from="1726927980957" duration="120583000" />
+      <workItem from="1731714946701" duration="598000" />
+      <workItem from="1733002255757" duration="193000" />
+      <workItem from="1733002503990" duration="3000" />
+      <workItem from="1734445770923" duration="22000" />
+      <workItem from="1734445798494" duration="1126000" />
+      <workItem from="1735736322013" duration="560000" />
+      <workItem from="1735736893292" duration="1681000" />
+      <workItem from="1739137044945" duration="42000" />
+      <workItem from="1739137096925" duration="1000" />
+      <workItem from="1740588582153" duration="18000" />
+      <workItem from="1740588606004" duration="40000" />
+      <workItem from="1740588655316" duration="1283000" />
+      <workItem from="1740592571718" duration="23000" />
+      <workItem from="1742573661858" duration="32000" />
+      <workItem from="1742573703616" duration="642000" />
+      <workItem from="1743185591518" duration="101000" />
+      <workItem from="1743185702389" duration="113000" />
+      <workItem from="1743185823972" duration="261000" />
+      <workItem from="1743186091425" duration="222000" />
+      <workItem from="1743186325746" duration="7000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
